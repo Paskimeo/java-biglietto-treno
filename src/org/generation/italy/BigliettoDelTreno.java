@@ -19,8 +19,18 @@ public class BigliettoDelTreno {
 		    System.out.println("Età: " + eta);
 		    System.out.println("kilometri scelti: " + kilometri);
 
-		    double costoBiglietto = kilometri * 0.21;
-		    System.out.println(costoBiglietto);
+		    float costoBiglietto = kilometri * 0.21;
+		    System.out.println("costo del biglietto: " + costoBiglietto);
+		    
+		    if(eta < 18) {
+		    	double costoBigliettoGiovani = costoBiglietto - costoBiglietto * 20 / 100;
+		    	System.out.println("prezzo con lo sconto young: " + costoBigliettoGiovani);
+		      
+		    }else if (eta > 65) {
+		    	double costoBigliettoAnziani = costoBiglietto - costoBiglietto * 40 / 100;
+		    	System.out.println("prezzo con lo sconto young: " + costoBigliettoAnziani);
+		    }
+		    
 		    
 		    scan.close();
 	}
