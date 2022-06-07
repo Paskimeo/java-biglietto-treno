@@ -10,7 +10,7 @@ public class BigliettoDelTreno {
 		    int kilometri;
 		    Scanner scan = new Scanner(System.in);
 
-		    System.out.print("Inserisci età: ");
+		    System.out.print("Inserisci la tua età: ");
 		    eta = scan.nextInt();
 		    System.out.print("Inserisci kilometri da percorrere: ");
 		    kilometri = scan.nextInt();
@@ -19,6 +19,8 @@ public class BigliettoDelTreno {
 		    System.out.println("Età: " + eta);
 		    System.out.println("kilometri scelti: " + kilometri);
 
+		    double costoBiglietto = kilometri * 0.21;
+		    System.out.println(costoBiglietto);
 		    
 		    scan.close();
 	}
